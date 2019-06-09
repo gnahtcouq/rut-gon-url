@@ -168,5 +168,6 @@
         <p>Copyright © 2019 <a href="https://quocthang.gq/" data-tooltip='Website' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>. All rights reserved.</p>
       </div>
     </div>
+    <script src="//rum-static.pingdom.net/pa-5cfcbeaed92acb001700027d.js" async></script>
 </body>
 </html>
