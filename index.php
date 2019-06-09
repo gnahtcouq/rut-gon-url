@@ -99,73 +99,72 @@
 	    	</div>
 	    	<br />
 	    	<div class="w"></div>
-              <form method="post" action="">
-              <?
-                    if(isset($errors['url'])){
-                          echo '<div class="error">'.$errors['url'].'</div>';
-                    }elseif(isset($success)){
-                          echo '<div class="success">'.$success.'</div>';
-                    }
-              ?>
-              	<input type="text" name="url" value="" class="instinput" placeholder="Liên kết cần rút gọn" autocomplete="off">
-              	<button type="submit" class="instabutton">Rút gọn</button>
-              </form>
-          </div>
+        <form method="post" action="">
+          <?
+                if(isset($errors['url'])){
+                      echo '<div class="error">'.$errors['url'].'</div>';
+                }elseif(isset($success)){
+                      echo '<div class="success">'.$success.'</div>';
+                }
+          ?>
+        	<input type="text" name="url" value="" class="instinput" placeholder="Liên kết cần rút gọn" autocomplete="off">
+        	<button type="submit" class="instabutton">Rút gọn</button>
+        </form>
       </div>
-      <br />
+    </div>
+    <br />
+    <div align="center">
+    	<table cellpadding="30px" cellspacing="0px" width="50%" id="table">
+		<tr>
+			<th>STT</th>
+			<th>Liên kết rút gọn</th>
+			<th>Liên kết gốc</th>
+			<th>Quản lí</th>
+		</tr>
+    		<?
+    		    // Khai báo biến
+    		    $data = array();
 
-	<div align="center">
-		<table cellpadding="30px" cellspacing="0px" width="50%" id="table">
-			<tr>
-				<th>STT</th>
-        <th>Liên kết rút gọn</th>
-        <th>Liên kết gốc</th>
-        <th>Quản lí</th>
-      </tr>
-			<?
-			    // Khai báo biến
-			    $data = array();
+    		    // Lấy dữ liệu ra (nếu có)
+    		    if(file_exists('data.txt')){
+    		          $json = file_get_contents('data.txt');
+    		          $data = json_decode($json, true);
+    		    }
 
-			    // Lấy dữ liệu ra (nếu có)
-			    if(file_exists('data.txt')){
-			          $json = file_get_contents('data.txt');
-			          $data = json_decode($json, true);
-			    }
-
-			    // Đảo mảng
-			    $data = array_reverse($data, TRUE);
-			?>
-			<?if(!count($data)):?>
-			<tr>
-				<td colspan="4" align="center"><center>Oops, chưa có dữ liệu !!</center></td>
-			</tr>
-			<?else:?>
-			    <? $stt = 1; ?>
-			    <?foreach($data as $k=>$v):?>
-			    <tr>
-			    	<td><?=$stt?></td>
-			    	<td>quocthang.herokuapp.com/?k=<?=$k?></td>
-			    	<td><?=$v?></td>
-			    	<td>
-              <a href="delete.php?k=<?=$k?>" title="Xóa" onclick="return confirm('Bạn có thật sự muốn xóa?')">
-                <i class="far fa-trash-alt"></i>
-              </a>
-			    	</td>
-			    	<? $stt++; ?>
-			    </tr>
-			    <?endforeach?>
-			<?endif?>
-		</table>
-	</div>
-	<br />
-	<br />
-	<br />
-	<div class="w"></div>
-	<div align="center">
-		<div id="footer">
-			<p>Developed by&ensp;<i class='fa fa-heart animation-heart infinite animation-pulse'></i>&ensp;<a href="https://facebook.com/100012349937086" data-tooltip='Facebook' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a></p>
-			<p>Copyright © 2019 <a href="https://quocthang.gq/" data-tooltip='Website' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>. All rights reserved.</p>
-		</div>
-	</div>
+    		    // Đảo mảng
+    		    $data = array_reverse($data, TRUE);
+    		?>
+    		<?if(!count($data)):?>
+    		<tr>
+    			<td colspan="4" align="center"><center>Oops, chưa có dữ liệu !!</center></td>
+    		</tr>
+    		<?else:?>
+    		    <? $stt = 1; ?>
+    		    <?foreach($data as $k=>$v):?>
+    		    <tr>
+    		    	<td><?=$stt?></td>
+    		    	<td>quocthang.herokuapp.com/?k=<?=$k?></td>
+    		    	<td><?=$v?></td>
+    		    	<td>
+                <a href="delete.php?k=<?=$k?>" title="Xóa" onclick="return confirm('Bạn có thật sự muốn xóa?')">
+                  <i class="far fa-trash-alt"></i>
+                </a>
+    		    	</td>
+    		    	<? $stt++; ?>
+    		    </tr>
+    		    <?endforeach?>
+    		<?endif?>
+    	</table>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="w"></div>
+    <div align="center">
+    	<div id="footer">
+    		<p>Developed by&ensp;<i class='fa fa-heart animation-heart infinite animation-pulse'></i>&ensp;<a href="https://facebook.com/100012349937086" data-tooltip='Facebook' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a></p>
+    		<p>Copyright © 2019 <a href="https://quocthang.gq/" data-tooltip='Website' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>. All rights reserved.</p>
+    	</div>
+    </div>
 </body>
 </html>
