@@ -1,0 +1,2 @@
+# rutgonlink
+Rút Gọn URL
