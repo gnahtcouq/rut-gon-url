@@ -17,5 +17,5 @@
 		file_put_contents('data.txt', json_encode($data));
 	}
 
-	header('location:https://quocthang.gq/');exit;
+	header('location:https://quocthang.herokuapp.com/');exit;
 ?>
