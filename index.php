@@ -146,9 +146,11 @@
     		    	<td>quocthang.herokuapp.com/?k=<?=$k?></td>
     		    	<td><?=$v?></td>
     		    	<td>
-                <a href="delete.php?k=<?=$k?>" title="Xóa" onclick="return confirm('Bạn có thật sự muốn xóa?')">
-                  <i class="far fa-trash-alt"></i>
-                </a>
+				<div align="center">
+					<a href="delete.php?k=<?=$k?>" title="Xóa" onclick="return confirm('Bạn có thật sự muốn xóa?')">
+						<i class="far fa-trash-alt"></i>
+					</a>
+				</div>
     		    	</td>
     		    	<? $stt++; ?>
     		    </tr>
