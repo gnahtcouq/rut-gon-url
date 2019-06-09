@@ -154,5 +154,6 @@
     </div>
   </div>
   <script src="js/bootstrap.min.js"></script>
+  <script src="//rum-static.pingdom.net/pa-5cfcbeaed92acb001700027d.js" async></script>
 </body>
 </html>
