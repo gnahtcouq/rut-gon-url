@@ -63,14 +63,15 @@
   <meta property="og:site_name" content="QUOCTHANG.GQ">
   <meta property="og:description" content="Owned by Quoc Thang.">
   <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-  <link rel="stylesheet" type="text/css" href="css/quocthang.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/quocthang.css">
+  <link rel="stylesheet" type="text/javascript" href="js/bootstrap.min.js">
   <link rel="stylesheet" type="text/css" href="css/loader.css">
   <link rel="stylesheet" type="text/javascript" href="js/loader.js">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/javascript" href="js/heart-effect.js">
+  <link rel="stylesheet" type="text/javascript" href="js/quocthang.js">
 </head>
 <body>
   <!--
@@ -78,13 +79,12 @@
   {• . •}
    //> ♥ "Copyright © 2019 Quoc Thang"-->
   <script src="js/loader.js"></script>
-  <div id='main'>
+  <div id='main' align="center">
     <div class='container'>
-      <div  style='margin-top:150px;margin-bottom:30px;text-align:center;'>
-        <img src='../images/quocthang.png' style='width: 100px;margin-bottom:15px'>
-        <h1>RUT GON URL</h1>
+      <div  style='margin-top:50px;margin-bottom:30px;text-align:center;'>
+        <img src='./images/quocthang.png' style='width: 100px;margin-bottom:15px'>
+        <h1><span class="highlight">RÚT GỌN URL</span></h1>
       </div>
-      <br />
       <div class="w"></div>
       <form method="post" action="">
         <?
@@ -95,13 +95,13 @@
               }
         ?>
         <input type="text" name="url" value="" class="instinput" placeholder="Liên kết cần rút gọn" autocomplete="off">
-        <button type="submit" class="instabutton">Rút gọn</button>
+        <button type="submit" class="instabutton">Rút gọn đi chờ gì nữa ^^ ~</button>
       </form>
     </div>
   </div>
-  <br />
+  <br/>
   <div align="center">
-    <table cellpadding="30px" cellspacing="0px" width="75%" id="table">
+    <table cellpadding="30px" cellspacing="0px" width="95%" id="table">
     <tr>
       <th>STT</th>
       <th>Liên kết rút gọn</th>
@@ -143,17 +143,18 @@
       <?endif?>
     </table>
   </div>
-  <br />
-  <br />
-  <br />
+  <br/>
   <div class="w"></div>
-  <div align="center">
-    <div id="footer">
-      <p>Developed by&ensp;<i class='fa fa-heart animation-heart infinite animation-pulse'></i>&ensp;<a href="https://facebook.com/100012349937086" data-tooltip='Facebook' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a></p>
-      <p>Copyright © 2019 <a href="https://quocthang.gq/" data-tooltip='Website' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>. All rights reserved.</p>
-    </div>
+  <div class="footer">
+      <p>Developed by&ensp;
+          <i class='fa fa-heart animation-heart infinite animation-pulse'></i>&ensp;
+          <a href="https://facebook.com/100012349937086" data-tooltip='Facebook' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>
+      </p>
+      <p>Copyright © 2019 
+          <a href="https://quocthang.gq/" id='tranvanquocthang' data-tooltip='Website' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>. All rights reserved.
+      </p>
   </div>
   <script src="js/bootstrap.min.js"></script>
-  <script src="//rum-static.pingdom.net/pa-5cfcbeaed92acb001700027d.js" async></script>
+  <script src="js/quocthang.js"></script>
 </body>
 </html>
