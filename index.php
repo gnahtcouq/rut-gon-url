@@ -55,13 +55,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="gRAR5UIlxj4N2AnNQYN7YKo1gHMs4w4rEmpBEDcYNxg" />
-  <meta name="description" content="Owned by Quoc Thang.">
+  <meta name="google-site-verification" content="d1HiF79L13twZWw1Obz4Mh4VTPvMyh1xSvr_onLWMwI"/>
+  <meta name="description" content="Owned by Quoc Thang from J2TEAM">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Quoc Thang">
-  <meta property="og:url" content="https://quocthang.gq/">
-  <meta property="og:site_name" content="QUOCTHANG.GQ">
-  <meta property="og:description" content="Owned by Quoc Thang.">
+  <meta property="og:url" content="https://gnahtcouq.github.io/">
+  <meta property="og:site_name" content="gnahtcouq.github.io">
+  <meta property="og:description" content="Owned by Quoc Thang from J2TEAM.">
   <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -151,7 +151,7 @@
           <a href="https://facebook.com/100012349937086" data-tooltip='Facebook' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>
       </p>
       <p>Copyright © 2019 
-          <a href="https://quocthang.gq/" id='tranvanquocthang' data-tooltip='Website' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>. All rights reserved.
+          <a href="https://gnahtcouq.github.io" id='tranvanquocthang' data-tooltip='Website' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>. All rights reserved.
       </p>
   </div>
   <script src="js/bootstrap.min.js"></script>
