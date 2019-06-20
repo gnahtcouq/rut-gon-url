@@ -103,7 +103,7 @@
   <div align="center">
     <table cellpadding="30px" cellspacing="0px" width="95%" id="table">
     <tr>
-      <th>STT</th>
+      <th>//</th>
       <th>Liên kết rút gọn</th>
       <th>Liên kết gốc</th>
       <th>Xóa</th>
