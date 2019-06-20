@@ -106,7 +106,7 @@
       <th>STT</th>
       <th>Liên kết rút gọn</th>
       <th>Liên kết gốc</th>
-      <th>Quản lí</th>
+      <th>Xóa</th>
     </tr>
       <?
       // Khai báo biến
