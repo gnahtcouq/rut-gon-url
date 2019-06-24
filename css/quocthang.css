@@ -1,46 +1,17 @@
-[data-tooltip] {
-position: relative;
-z-index: 9;
-display: inline-table;
+/*--------- Text Selection LEBALONGIT ------------- */
+::selection {
+  background:yellow;
+  /*------Background color-----*/
+color:#000;
+/*------Text color-----*/
 }
-[data-tooltip]:before {
-position: absolute;
-bottom: 100%;
-left: 50%;
-margin-bottom: 5px;
-margin-left: -57px;
-padding: 4px 7px;
-width: 100px;
-border-radius: 4px;
-background-color: #000;
-color: #fff;
-content: attr(data-tooltip);
-text-align: center;
-font-size: 12px;
-line-height: 1.4;
+::-moz-selection {
+  /*------For Firefox-----*/
+  background:#7577a9; color:#fff
 }
-[data-tooltip]:after {
-position: absolute;
-bottom: 100%;
-left: 50%;
-margin-left: -5px;
-width: 0;
-border-top: 5px solid #000;
-border-right: 5px solid transparent;
-border-left: 5px solid transparent;
-content: " ";
-font-size: 0;
-line-height: 0;
-}
-[data-tooltip]:before, [data-tooltip]:after {
-visibility: hidden;
-opacity: 0;
-}
-[data-tooltip]:hover:before, [data-tooltip]:hover:after {
-visibility: visible;
-filter: alpha(opacity=90);
-opacity: .9;
-}
+::-webkit-selection {
+  /*------For IOS Safari-----*/
+  background:#7577a9;color:#fff}
 
 .highlight {
     background: url(../images/highlight/yellow-brushstroke.png);
@@ -142,4 +113,48 @@ canvas {
 
 .quocthang{
     z-index: 2;
+}
+
+[data-tooltip] {
+position: relative;
+z-index: 9;
+display: inline-table;
+}
+[data-tooltip]:before {
+position: absolute;
+bottom: 100%;
+left: 50%;
+margin-bottom: 5px;
+margin-left: -57px;
+padding: 4px 7px;
+width: 100px;
+border-radius: 4px;
+background-color: #000;
+color: #fff;
+content: attr(data-tooltip);
+text-align: center;
+font-size: 12px;
+line-height: 1.4;
+}
+[data-tooltip]:after {
+position: absolute;
+bottom: 100%;
+left: 50%;
+margin-left: -5px;
+width: 0;
+border-top: 5px solid #000;
+border-right: 5px solid transparent;
+border-left: 5px solid transparent;
+content: " ";
+font-size: 0;
+line-height: 0;
+}
+[data-tooltip]:before, [data-tooltip]:after {
+visibility: hidden;
+opacity: 0;
+}
+[data-tooltip]:hover:before, [data-tooltip]:hover:after {
+visibility: visible;
+filter: alpha(opacity=90);
+opacity: .9;
 }
