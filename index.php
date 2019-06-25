@@ -155,7 +155,7 @@
 		      <i class='fa fa-heart animation-heart infinite animation-pulse'></i>&ensp;
 		      <a href="https://facebook.com/100012349937086" data-tooltip='Facebook' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>
 		  </p>
-		  <p>Copyright © 2019 
+		  <p>Copyright &copy; 2019 
 		      <a href="https://gnahtcouq.github.io" id='tranvanquocthang' data-tooltip='Website' href='javascript:void(0);' target="_blank" rel="nofollow">Quoc Thang</a>. All rights reserved.
 		  </p>
 		</div>
