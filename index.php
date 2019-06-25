@@ -86,7 +86,7 @@
 	<div class="quocthang">
 		<div id='main' align="center">
 		<div class='container'>
-		  <div  style='margin-top:50px;margin-bottom:30px;text-align:center;'>
+		  <div style='margin-top:50px;margin-bottom:30px;text-align:center;'>
 		    <img src='./images/quocthang.png' style='width: 100px;margin-bottom:15px'>
 		    <h1><span class="highlight">RÚT GỌN URL</span></h1>
 		  </div>
