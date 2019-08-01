@@ -11,7 +11,7 @@
         if(isset($data[$_GET['k']])){ // Có tồn tại link rút gọn
               header('location:'.$data[$_GET['k']]);
         }else{ // Không tồn tại link rút gọn
-              header('location:https://gnaht.herokuapp.com/');
+              header('location:https://quocthang.herokuapp.com/');
         }
         exit;
   }
@@ -44,7 +44,7 @@
               // Chuyển mảng thành JSON và lưu vào file TXT
               file_put_contents('data.txt', json_encode($data));
               // Thành công
-              $success = '<a href="https://gnaht.herokuapp.com/?k='.$key.'" target="_blank">https://gnaht.herokuapp.com/?k='.$key.'</a>';
+              $success = '<a href="https://quocthang.herokuapp.com/?k='.$key.'" target="_blank">https://quocthang.herokuapp.com/?k='.$key.'</a>';
         }
   }
 ?>
@@ -133,7 +133,7 @@
 		  <?foreach($data as $k=>$v):?>
 		  <tr>
 		    <td><?=$stt?></td>
-		    <td>gnaht.herokuapp.com/?k=<?=$k?></td>
+		    <td>quocthang.herokuapp.com/?k=<?=$k?></td>
 		    <td><?=$v?></td>
 		    <td>
 		      <div align="center">
