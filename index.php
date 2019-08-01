@@ -133,7 +133,7 @@
 		  <?foreach($data as $k=>$v):?>
 		  <tr>
 		    <td><?=$stt?></td>
-		    <td>quocthang.herokuapp.com/?k=<?=$k?></td>
+		    <td>gnaht.herokuapp.com/?k=<?=$k?></td>
 		    <td><?=$v?></td>
 		    <td>
 		      <div align="center">
