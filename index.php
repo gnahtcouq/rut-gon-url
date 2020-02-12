@@ -98,7 +98,13 @@ if(count($_POST)){
 			<div class='container'>
 				<div style='margin-top:50px;margin-bottom:30px;text-align:center;'>
 				<img src='assets/images/quocthang.png' style='width: 100px;margin-bottom:15px'>
-				<h3><span class="highlight">RÚT GỌN URL</span></h3>
+				<div align="center">
+					<section id="main-content">
+						<h3>
+							<span class="highlight">Shorten URL</span>
+						</h3>
+					</section>
+				</div>
 			</div>
 			<div class="line"></div>
 			<form method="post" action="">
@@ -120,9 +126,9 @@ if(count($_POST)){
 		<table cellpadding="30px" cellspacing="0px" width="95%" id="table">
 			<tr>
 				<th>//</th>
-				<th>Liên kết rút gọn</th>
-				<th>Liên kết gốc</th>
-				<th>Quản lí</th>
+				<th>Short URL</th>
+				<th>Long URL</th>
+				<th>Manage</th>
 			</tr>
 
 			<?

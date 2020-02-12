@@ -10,7 +10,7 @@ h3 {
     text-transform: uppercase;
     display: block;
     font-size: 1.5rem;
-    font-weight: 800;
+	font-weight: 800;
 }
 
 #main-content {
@@ -27,7 +27,7 @@ h3 {
 	margin-top: 24px;
 	margin-bottom: 8px;
 	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-	font-size: 18px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #474747;
 	text-indent: 3px;
@@ -272,10 +272,18 @@ canvas {
 	margin-bottom: 50px;
 }
 
-th,td{
+th{
+	padding:8px;
+	font-size: 20px;
+	text-align:left;
+	border-bottom:1px solid #ddd;
+	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
+td{
 	padding:8px;
 	text-align:left;
-	border-bottom:1px solid #ddd
+	border-bottom:1px solid #ddd;
 }
 
 tr:hover{
