@@ -1,0 +1,325 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:500,500i,600,600i,700,700i,800,800i,900,900i";
+@import "https://fonts.googleapis.com/css?family=Architects+Daughter";
+body {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: 'Montserrat';
+	width: 100%;
+	height: 100%
+}
+
+h3 {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#main-content {
+	width: 490px;
+}
+
+#main-content h3:before {
+	padding-right: 0;
+	margin-left: 0;
+    content: none;
+}
+
+#main-content h3 {
+	margin-top: 24px;
+	margin-bottom: 8px;
+	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #474747;
+	text-indent: 3px;
+}
+
+#main-content h3:before {
+	padding-right: 0.3em;
+	margin-left: -2em;
+	content: "///";
+	color: #9ddcff;
+}
+
+.container {
+	margin: 0
+}
+
+.left-panel {
+	padding: 1rem;
+	height: 100%;
+  min-height: 500px;
+	text-align: right;
+}
+
+.left-panel h1 {
+	font-size: 2rem;
+	font-weight: 800
+}
+
+.author {
+	margin-top: 20%
+}
+
+.author-desc {
+	display: block;
+	font-weight: 300
+}
+
+.links {
+	margin-top: 2rem
+}
+
+.links .link {
+	margin-top: .5rem;
+	display: block;
+	font-size: .75rem
+}
+
+.links .link a {
+	color: #000
+}
+
+.links .link i {
+	font-size: 1rem;
+	margin-left: .5rem
+}
+
+.right-panel .content {
+	margin-left: 2rem;
+	font-size: .9rem;
+	margin-top: 2rem
+}
+
+.right-panel h1 {
+	text-transform: uppercase;
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 800
+}
+
+.right-panel h1:after {
+	content: "";
+	display: block;
+	border-bottom: 2px solid #000;
+	width: 3rem
+}
+
+.right-panel h2 {
+	text-transform: uppercase;
+	display: block;
+	font-size: 1rem;
+	font-weight: 700
+}
+
+.right-panel h3 {
+	display: block;
+	font-size: .75rem;
+	font-weight: 700
+}
+
+.right-panel .projects {
+	padding-top: 1rem
+}
+
+.right-panel .list {
+	margin-top: 1rem
+}
+
+.right-panel .list .project {
+	padding-top: 1rem
+}
+
+.project .project-date {
+	font-weight: 400;
+	font-size: .75rem;
+	margin-bottom: 1rem
+}
+
+.project .project-description {
+	display: inline-block
+}
+
+.right-panel .experiences {
+	padding-top: 1rem
+}
+
+.abilities {
+	list-style-type: none
+}
+
+.abilities li:before {
+	content: "-";
+	padding-right: .5rem;
+	display: inline-block
+}
+
+.right-panel .skills {
+	padding-top: 1rem
+}
+
+.right-panel .footer {
+	padding: 1rem;
+	text-align: right;
+	font-weight: 700;
+	font-size: .75rem;
+	margin-top: 2rem
+}
+
+.highlight {
+	background: url(../images/highlight/yellow-brushstroke.png);
+	background-repeat: no-repeat;
+	background-size: 100% 95%;
+	padding: 8px 0;
+}
+.highlight-green {
+	background: url(../images/highlight/green.png);
+	background-repeat: no-repeat;
+	background-size: 100% 95%;
+	padding: 8px 0;
+}
+.highlight-brown {
+	background: url(../images/highlight/brown.png);
+	background-repeat: no-repeat;
+	background-size: 100% 95%;
+	padding: 8px 0;
+}
+.highlight-red {
+	background: url(../images/highlight/red.png);
+	background-repeat: no-repeat;
+	background-size: 100% 95%;
+	padding: 8px 0;
+}
+.highlight-blue {
+	background: url(../images/highlight/blue.png);
+	background-repeat: no-repeat;
+	background-size: 100% 95%;
+	padding: 8px 0;
+}
+.highlight-purple {
+	background: url(../images/highlight/purple.png);
+	background-repeat: no-repeat;
+	background-size: 100% 95%;
+	padding: 8px 0;
+}
+
+.line {
+	padding: 10px;
+	border-top: 1px solid #ededed;
+}
+
+.copyright {
+	padding: 1rem;
+	text-align: right;
+	font-weight: 700;
+	font-size: .75rem;
+	margin-top: 0rem
+}
+
+.footer {
+	padding: 1rem;
+	text-align: center;
+	font-weight: 700;
+	font-size: .75rem;
+	margin-top: 0rem
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+}
+
+mark {	
+	background-color: blanchedalmond;	
+}
+
+.user-input: {
+    z-index: 2;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+    z-index: -1;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+.table{border-collapse:collapse;width:100%}th,td{padding:8px;text-align:left;border-bottom:1px solid #ddd}tr:hover{background-color:#f5f5f5}
+
+.fa-trash-alt{color:red}
+
+.error{color:red}
+
+.success{color:green}
+
+
+.form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.instinput {
+    width: 100%;
+    border: 1px solid #efefef;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+    background: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.instinput:focus {
+    border: 1px solid #b2b2b2;
+}
+
+.instabutton {
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    background: #3897f0;
+    border-color: #3897f0;
+    color: #fff;
+    margin-top: 10px;
+}
