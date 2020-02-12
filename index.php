@@ -71,7 +71,7 @@ if(count($_POST)){
 
 			// Nếu sửa thành công thì về trang chủ
 			if(isset($_GET['e'])){
-				header('location:index.php')
+				header('location:index.php');
 			}
 	}
 }
