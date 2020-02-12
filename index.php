@@ -19,6 +19,22 @@ if(isset($_GET['k'])){
 $post = array(
 	'url'=>''
 );
+
+// Lấy dữ liệu hiện tại (trường hợp sửa)
+if(isset($_GET['e'])){
+	// Khai báo mảng
+	$data = array();
+
+	// Lấy dữ liệu hiện tại (nếu có)
+	if(file_exists('data.txt')){
+		$json = file_get_contents('data.txt');
+		$data = json_decode($json, true);
+	}
+
+	if(isset($data[$_GET['e']])){ // Có tồn tại link rút gọn
+		$post['url'] = $data[$_GET['e']];
+	}
+}
 // Khi người dùng submit
 if(count($_POST)){
 	// 1. Lấy dữ liệu nhập
@@ -38,13 +54,25 @@ if(count($_POST)){
 				$json = file_get_contents('data.txt');
 				$data = json_decode($json, true);
 			}
-			// Thêm phần tử vào mảng
+
+			if(isset($_GET['e']) && isset($data[$_GET['e']])){ // Trường hợp sửa
+				$data[$_GET['e']] = $post['url'];
+			}else{ // Trường hợp thêm
+				// Thêm phần tử vào mảng
 				$key = substr(md5(time().'-'.rand(100000, 999999)), 0, 6);
 				$data[$key] = $post['url'];
+			}
+
 			// Chuyển mảng thành JSON và lưu vào file TXT
 			file_put_contents('data.txt', json_encode($data));
+
 			// Thành công
 			$success = '<a href="https://quocthang.best/?k='.$key.'" target="_blank">https://quocthang.best/?k='.$key.'</a>';
+
+			// Nếu sửa thành công thì về trang chủ
+			if(isset($_GET['e'])){
+				header('location:index.php')
+			}
 	}
 }
 ?>
@@ -81,23 +109,20 @@ if(count($_POST)){
 					echo '<div class="success">'.$success.'</div>';
 				}
 				?>
-				<input type="text" name="url" value="" class="instinput" placeholder="Liên kết cần rút gọn" autocomplete="off">
+				<input type="text" name="url" value="<?if(isset($_GET['e'])):?><?=$post['url']?><?endif?>" class="instinput" placeholder="Liên kết cần rút gọn" autocomplete="off">
 				<button type="submit" class="instabutton">Rút gọn đi chờ gì nữa ^^ ~</button>
 			</form>
 		</div>
 	</div>
 
-	<br/>
-
 	<div class="line"></div>
-
 	<div align="center">
 		<table cellpadding="30px" cellspacing="0px" width="95%" id="table">
 			<tr>
 				<th>//</th>
 				<th>Liên kết rút gọn</th>
 				<th>Liên kết gốc</th>
-				<th>Xóa</th>
+				<th>Quản lí</th>
 			</tr>
 
 			<?
@@ -113,26 +138,29 @@ if(count($_POST)){
 			?>
 
 			<?if(!count($data)):?>
-				<tr>
-					<td colspan="4" align="center"><br/><center>Oops, chưa có dữ liệu !!</center><br/></td>
-				</tr>
+
+			<tr>
+				<td colspan="4" align="center"><br/><center>Oops, chưa có dữ liệu !!</center><br/></td>
+			</tr>
 				
-				<?else:?>
-					<? $stt = 1; ?>
-					<?foreach($data as $k=>$v):?>
-						<tr>
-							<td><?=$stt?></td>
-							<td>quocthang.best/?k=<?=$k?></td>
-							<td><?=$v?></td>
-							<td><a href="delete.php?k=<?=$k?>" title="Xóa" onclick="return confirm('Bạn có thật sự muốn xóa?')"><i class="far fa-trash-alt"></i></a></td>
-							<? $stt++; ?>
-						</tr>
-					<?endforeach?>
+			<?else:?>
+				<? $stt = 1; ?>
+				<?foreach($data as $k=>$v):?>
+					<tr>
+						<td><?=$stt?></td>
+						<td>quocthang.best/?k=<?=$k?></td>
+						<td><?=$v?></td>
+						<td>
+							<a href="index.php?e=<?=$k?>" title="Sửa"><i class="far fa-edit"></i></a>
+							&nbsp;&nbsp;&nbsp;
+							<a href="delete.php?k=<?=$k?>" title="Xóa" onclick="return confirm('Bạn có thật sự muốn xóa?')"><i class="far fa-trash-alt"></i></a>
+						</td>
+						<? $stt++; ?>
+					</tr>
+				<?endforeach?>
 			<?endif?>
 		</table>
 	</div>
-
-	<br/>
 
 	<div class="line"></div>
 	<div class="footer">

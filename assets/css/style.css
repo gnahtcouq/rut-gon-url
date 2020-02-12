@@ -209,6 +209,7 @@ h3 {
 .line {
 	padding: 10px;
 	border-top: 1px solid #ededed;
+	margin-top: 50px;
 }
 
 .copyright {
@@ -268,7 +269,22 @@ canvas {
     z-index: -1;
 }
 
-.table{border-collapse:collapse;width:100%}th,td{padding:8px;text-align:left;border-bottom:1px solid #ddd}tr:hover{background-color:#f5f5f5}
+.table{
+	border-collapse:collapse;
+	width:100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+th,td{
+	padding:8px;
+	text-align:left;
+	border-bottom:1px solid #ddd
+}
+
+tr:hover{
+	background-color:#f5f5f5
+}
 
 .fa-trash-alt{color:red}
 
